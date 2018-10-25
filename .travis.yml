@@ -14,7 +14,7 @@ matrix:
     - rust: nightly
   fast_finish: true
   include:
-    - rust: beta
+    - rust: stable
       before_script:
         - rustup component add rustfmt-preview clippy-preview
       script: >-
@@ -25,13 +25,11 @@ matrix:
         cargo test --all-features &&
         cargo test --no-default-features
 
-    # FIXME: enable after releasing 1.30.0
-    # - rust: 1.30.0
-    # - rust: beta
+    - rust: 1.30.0
+    - rust: beta
     - rust: nightly
 
-    # FIXME: switch to stable
-    - rust: beta
+    - rust: stable
       env: DEPLOY_API_DOC
       script: >-
         rm -rf target/doc &&
