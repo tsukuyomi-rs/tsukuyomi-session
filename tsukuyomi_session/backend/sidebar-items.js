@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CookieSessionBackend",""],["RedisSessionBackend",""]],"trait":[["Backend","A trait representing the session backend."]]});

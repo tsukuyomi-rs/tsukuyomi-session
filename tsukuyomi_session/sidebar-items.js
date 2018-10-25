@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["backend","The definition of session backends"]],"struct":[["Session","An interface of session values."],["Storage","A `Modifier` for managing session values."]],"trait":[["InputSessionExt","An extension trait which adding methods for accessing `Session`."]]});
